@@ -7,6 +7,9 @@ const registerUser = async (req, res) => {
     let data = req.body;
     let files = req.files[0]
     let { name, email, password, role, address, landMark, state, mobile } = data
+    
+// validation wiil be added later
+    
     if (Object.keys(data).length === 0) {
       return res
         .status(400)
